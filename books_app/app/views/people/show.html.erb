@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>名前:</strong>
+  <%= @person.name %>
+</p>
+
+<p>
+  <strong>性別:</strong>
+  <%= @person.sex %>
+</p>
+
+<p>
+  <strong>Eメール:</strong>
+  <%= @person.email %>
+</p>
+
+<%= link_to '編集', edit_person_path(@person) %> |
+<%= link_to '戻る', people_path %>
